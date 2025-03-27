@@ -1,0 +1,571 @@
+/* Importa a fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Aplica a fonte Roboto ao body */
+body {
+    background-color: #070710;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff; /* Cor do texto para garantir visibilidade */
+    padding-top: 60px; /* O valor deve ser igual à altura da navbar */
+
+}
+
+.modify{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.logo2{
+    width: 300px;
+}
+
+
+.logo-kommo{
+    width: 150px;
+}
+
+.about h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.mt51{
+    padding-top: 100px !important;
+}
+
+.mb52{
+    padding-bottom: 10px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery img {
+    margin: 10px;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 575px) {
+    .mob {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .modify{
+        font-size: 40px;
+    }
+    .card {
+        width: 100%; /* Faz o card ocupar a largura total da coluna no modo mobile */
+    }
+
+    .logo{
+        margin-top: 10px;
+        width: 400px;
+    }
+
+    .mt-50{
+        margin-top: 30px !important;
+    }
+
+}
+
+
+.carousel-item img {
+}
+@media (max-width: 992px) {
+    .carousel-item img {
+        max-height: 400px; /* Ajuste para tablets */
+    }
+}
+@media (max-width: 576px) {
+    .carousel-item img {
+        max-height: 300px; /* Ajuste para dispositivos móveis */
+    }
+}
+
+
+  .icon-container {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ec2);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.cont {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ec2);
+    border-radius: 50%;
+    width: 80px; /* Define a largura do círculo */
+    height: 80px; /* Define a altura do círculo */
+}
+
+.bg-black{
+    background-color: #4613642d !important;
+}
+
+.icon-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.cont:hover {
+    background: linear-gradient(45deg, #440141, #520520, #28095c);
+    border-radius: 50%;
+    width: 80px; /* Define a largura do círculo */
+    height: 80px; /* Define a altura do círculo */
+}
+.icon-container2 a{
+    color: white;
+}
+
+.form-novo{
+    background-color: transparent;
+    color: white;
+    border: 2px solid transparent; /* Define a largura da borda */
+    border-image: linear-gradient(to bottom, rgba(224, 46, 255, 0.5), rgba(206, 0, 252, 0.5)) 1; /* Define o gradiente da borda com opacidade */
+    border-radius: 0px;
+}
+
+::placeholder {
+    color: white !important;
+    opacity: 1; /* Para garantir que a cor do placeholder seja totalmente opaca */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white !important;
+    padding-top: 5px;
+
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white !important;
+    padding-top: 5px;
+}
+
+input {
+    height: 60px;
+}
+
+.mt-50{
+    margin-top: 40px;
+}
+.mt-25{
+    margin-top: 90px;
+}
+
+.btn-contact {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ec2);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.btn-contact:hover {
+    background: linear-gradient(45deg, #845ec2, #f06595, #ff6b6b);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-contact2 {
+    background: linear-gradient(45deg, #230136, #4e0655, #7025e9);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.btn-contact2:hover {
+    background: linear-gradient(45deg, #63019c, #8f0d9b, #8d48fc);
+    color: white;
+    text-decoration: none;
+}
+
+
+.total {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: none; /* Inicialmente escondido */
+}
+.disclaimer {
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-top: 10px;
+}
+.discount-info {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745; /* Cor verde para destacar */
+    margin-top: 20px;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #dc3545; /* Cor vermelha para destacar o preço original */
+}
+
+.hidden-content {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: #007bff;
+}
+.total, .discount-info, .original-price {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+.disclaimer {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 1rem;
+}
+
+.form-control {
+    font-size: 1rem;
+}
+
+
+.card {
+    background-color: transparent;
+    color: white;
+}
+
+.card p {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.fa-check-circle{
+    color: rgb(0, 192, 0);
+}
+
+.fa-circle-minus{
+    color: gray;
+}
+
+.rainbow-gradient-circle {
+    position: fixed;
+    left: -250px;
+    top: 250px;
+    right: auto;
+    bottom: auto;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    border-radius: 1000px;
+    background-image: linear-gradient(45deg, rgb(80, 8, 74), rgb(58, 0, 85));
+    opacity: 0.25;
+    -webkit-filter: blur(100px);
+    filter: blur(100px);
+}
+
+
+.footer-text{
+    color: #7376aa;
+}
+
+
+.btn-primary{
+
+    /* From https://css.glass */
+background: rgba(160, 3, 152, 0.767);
+border-radius: 5px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.7px);
+-webkit-backdrop-filter: blur(1.7px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+        font-size: 17px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+}
+
+.btn-secondary{
+    background-color: #845ec2;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.title3, .title {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.6);
+}
+
+/* Estilo base para .title3 */
+.title3 {
+    font-size: 80px;
+    /* TEXT GRADIENT */
+    color: #bd00c0;
+    background-image: -webkit-linear-gradient(45deg, #a04ada 94%, #4d0463 80%, #300028 49%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Estilo base para .title */
+.title {
+    font-size: 50px;
+}
+
+/* Responsivo para Tablets (largura máxima de 768px) */
+@media (max-width: 768px) {
+    .title3 {
+        font-size: 60px; /* Reduz o tamanho da fonte */
+        text-shadow: 3px 3px 4px rgba(0,0,0,0.5); /* Ajusta a sombra do texto */
+    }
+    .title {
+        font-size: 40px; /* Reduz o tamanho da fonte */
+        text-shadow: 3px 3px 4px rgba(0,0,0,0.5); /* Ajusta a sombra do texto */
+    }
+}
+
+/* Responsivo para Dispositivos Móveis (largura máxima de 480px) */
+@media (max-width: 480px) {
+    .title3 {
+        font-size: 40px; /* Reduz ainda mais o tamanho da fonte */
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.4); /* Ajusta a sombra do texto */
+    }
+    .title {
+        font-size: 25px; /* Reduz ainda mais o tamanho da fonte */
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.4); /* Ajusta a sombra do texto */
+    }
+}
+
+
+
+.tex{
+    font-size: 20px;
+}
+
+.card h4{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.text-new{
+    color: #ffe600 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.text-info{
+    font-weight: bold;
+    color: #00d9ff !important;
+    font-size: 20px;
+}
+
+.text-danger {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card h3{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    
+          /** TEXT GRADIENT */ color: #f633fb; background-image: -webkit-linear-gradient(45deg, #f633fb 94%, #250b24 80%, #aa00b9 49%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+          
+        
+}
+
+
+
+.card-inicial{
+    padding: 5px;
+    background-color: #cc00ff;
+    border-radius: 5px;
+}
+
+.option{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px;
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.option .fa-turn-down{
+    font-size: 10px;
+}
+
+.card-inicial .card{
+    background-color: #16001b !important;
+}
+
+.hp {
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.23);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.7px);
+-webkit-backdrop-filter: blur(1.7px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.padron {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card-body{
+    padding: 10px !important;
+}
+
+p{
+    margin-bottom: 0px !important;
+}
+
+
+.selectable-card {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.selectable-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.selectable-card.selected {
+    border: 2px solid #300222;
+    background-color: #ed79f8;
+    color: black;
+    font-weight: bold;
+}
+
+.card2 {
+    border: 1px solid #ed79f8;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cliente{
+    width: 200px;
+    max-height: 180px;
+}
+
+/* Adiciona um efeito de zoom e altera o cursor para pointer ao passar o mouse */
+.hovered {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave para o efeito de zoom e alteração de cor */
+    cursor: pointer; /* Altera o cursor para pointer */
+}
+
+.hovered:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do elemento em 10% */
+}
+
+
+#instafeed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#instafeed a {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    margin-bottom: 10px; /* Espaço entre as imagens */
+}
+
+#instafeed img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave para o efeito de zoom e alteração de cor */
+
+}
+
+/* Para telas maiores */
+@media(min-width: 768px) {
+    #instafeed {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #instafeed a {
+        width: 48%; /* Duas imagens por linha */
+    }
+}
+
+/* Para telas grandes */
+@media(min-width: 1024px) {
+    #instafeed a {
+        width: 32%; /* Três imagens por linha */
+    }
+}
+
+.separator-animated {
+    position: relative;
+    overflow: hidden;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(111, 100, 233, 0.60) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.separator-animated.animated-true::before {
+    content: '';
+    position: absolute;
+    width: 3%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, var(--color-primary) 50%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(20px);
+    animation: separateline 5s ease-in-out infinite;
+}
+
+@keyframes separateline {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 110%;
+    }
+}

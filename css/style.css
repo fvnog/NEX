@@ -1,0 +1,336 @@
+/* Importa a fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Aplica a fonte Roboto ao body */
+body {
+    background-color: #070710; /* Gradiente de roxo neon escuro */
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff; /* Cor do texto para garantir visibilidade */
+}
+
+
+.modify{
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.logo2{
+    width: 300px;
+}
+
+.bg-eletro{
+    background-image: url(../img/download\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer-text{
+    color: #7376aa;
+}
+
+.separator-animated {
+    position: relative;
+    overflow: hidden;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(111, 100, 233, 0.60) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.separator-animated.animated-true::before {
+    content: '';
+    position: absolute;
+    width: 3%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 0%, var(--color-primary) 50%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(20px);
+    animation: separateline 5s ease-in-out infinite;
+}
+
+@keyframes separateline {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 110%;
+    }
+}
+
+
+.logo-kommo{
+    width: 150px;
+}
+
+.about h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.btn-primary {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ec2);
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-shadow: 1px 2px 2px black;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #845ec2, #f06595, #ff6b6b);
+    color: white;
+    text-decoration: none;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery img {
+    margin: 10px;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 575px) {
+    .mob {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .modify{
+        font-size: 30px;
+    }
+    .mt-title{
+        margin-top: 30px;
+    }
+    .card {
+        width: 100%; /* Faz o card ocupar a largura total da coluna no modo mobile */
+    }
+
+    .logo{
+        margin-top: 10px;
+        width: 400px;
+    }
+
+    .mt-50{
+        margin-top: 30px !important;
+    }
+
+}
+
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Mantém o aspecto visual sem esticar */
+}
+@media (max-width: 992px) {
+    .carousel-item img {
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 576px) {
+    .carousel-item img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+
+
+
+  .icon-container {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ec2);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.cont {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ec2);
+    border-radius: 50%;
+    width: 80px; /* Define a largura do círculo */
+    height: 80px; /* Define a altura do círculo */
+}
+
+.bg-black{
+    background-color: #4613642d !important;
+}
+
+.icon-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.cont:hover {
+    background: linear-gradient(45deg, #440141, #520520, #28095c);
+    border-radius: 50%;
+    width: 80px; /* Define a largura do círculo */
+    height: 80px; /* Define a altura do círculo */
+}
+.icon-container2 a{
+    color: white;
+}
+
+.form-novo{
+    background-color: transparent;
+    color: white;
+    border: 2px solid transparent; /* Define a largura da borda */
+    border-image: linear-gradient(to bottom, rgba(224, 46, 255, 0.5), rgba(206, 0, 252, 0.5)) 1; /* Define o gradiente da borda com opacidade */
+    border-radius: 0px;
+}
+
+::placeholder {
+    color: white !important;
+    opacity: 1; /* Para garantir que a cor do placeholder seja totalmente opaca */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white !important;
+}
+
+
+.mt-50{
+    margin-top: 40px;
+}
+.mt-25{
+    margin-top: 90px;
+}
+
+.btn-contact {
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #845ec2);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.btn-contact:hover {
+    background: linear-gradient(45deg, #845ec2, #f06595, #ff6b6b);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-contact2 {
+    background: linear-gradient(45deg, #230136, #4e0655, #7025e9);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.btn-contact2:hover {
+    background: linear-gradient(45deg, #63019c, #8f0d9b, #8d48fc);
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    height: 100%;
+    cursor: pointer ;
+    background-color: transparent; /* Remove a cor de fundo do card */
+    border: 5px solid transparent; /* Define a largura da borda */
+    border-image: linear-gradient(to bottom, rgba(110, 15, 127, 0.5), rgba(176, 64, 200, 0.5)) 1; /* Define o gradiente da borda com opacidade */
+    border-radius: 1rem; /* Adiciona bordas arredondadas, opcional */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adiciona uma sombra leve, opcional */
+}
+
+.card:hover {
+    height: 100%;
+    cursor: pointer ;
+    background-color: transparent; /* Remove a cor de fundo do card */
+    border: 9px solid transparent; /* Define a largura da borda */
+    border-image: linear-gradient(to bottom, rgba(207, 0, 243, 0.5), rgba(47, 8, 56, 0.5)) 1; /* Define o gradiente da borda com opacidade */
+    border-radius: 1rem; /* Adiciona bordas arredondadas, opcional */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adiciona uma sombra leve, opcional */
+}
+
+
+.card-title{
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.card-text{
+    color: white;
+    margin-top: 25px;
+}
+
+
+#instafeed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#instafeed a {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    margin-bottom: 10px; /* Espaço entre as imagens */
+}
+
+#instafeed img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave para o efeito de zoom e alteração de cor */
+
+}
+
+/* Para telas maiores */
+@media(min-width: 768px) {
+    #instafeed {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #instafeed a {
+        width: 48%; /* Duas imagens por linha */
+    }
+}
+
+/* Para telas grandes */
+@media(min-width: 1024px) {
+    #instafeed a {
+        width: 32%; /* Três imagens por linha */
+    }
+}
